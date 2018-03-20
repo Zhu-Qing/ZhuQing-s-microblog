@@ -37,3 +37,8 @@ def register():
 		return redirect(url_for('auth.login'))
 	return render_template('auth/register.html',form=form)
 	
+@auth.route('/manage',methods=['GET'])
+def manage():
+	return render_template('auth/manage.html',users=User.query.all())
+	
+	

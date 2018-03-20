@@ -28,7 +28,10 @@
                 <li><a href="/">传送门</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li><a href="/">小游戏</a></li>
+                <li><a href="{{url_for('game.box')}}">小游戏</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="{{url_for('auth.manage')}}">管理</a></li>
             </ul>
 			{% endif %}			
             <ul class="nav navbar-nav navbar-right">
